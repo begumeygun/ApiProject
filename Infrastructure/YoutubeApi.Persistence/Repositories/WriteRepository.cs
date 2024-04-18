@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -29,7 +30,6 @@ namespace YoutubeApi.Persistence.Repositories
         {
             await Table.AddRangeAsync(entities);
         }
-
         public async Task<T> UpDateAsync(T entity)
         {
             await Task.Run(() => Table.Update(entity));
@@ -42,7 +42,5 @@ namespace YoutubeApi.Persistence.Repositories
         }
 
         
-
-       
     }
 }
