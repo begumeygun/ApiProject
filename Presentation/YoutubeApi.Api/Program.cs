@@ -1,4 +1,7 @@
 using YoutubeApi.Persistence;
+using YoutubeApi.Application;
+using YoutubeApi.Mapper;
+using YoutubeApi.Application.Exceptions;
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -16,6 +19,8 @@ builder.Configuration
     .AddJsonFile($"appsettings.json.{env.EnvironmentName}.json", optional: true);
 
 builder.Services.AddPersistence(builder.Configuration);
+builder.Services.AddApplication();
+builder.Services.AddCustomMapper();
 
 
 var app = builder.Build();
@@ -29,6 +34,7 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
+app.ConfigureExceptionHandlingMiddleware();
 app.UseAuthorization();
 
 app.MapControllers();
