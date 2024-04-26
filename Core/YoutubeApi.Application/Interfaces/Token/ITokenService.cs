@@ -14,6 +14,6 @@ namespace YoutubeApi.Application.Interfaces.Token
         Task<JwtSecurityToken> CreateToken(User user, IList<string> roles);
 
         string GenerateRefreshToken();
-        ClaimsPrincipal? GetPrincipalFormExpiredToken();
+        ClaimsPrincipal? GetPrincipalFormExpiredToken(string? token);
     }
 }
