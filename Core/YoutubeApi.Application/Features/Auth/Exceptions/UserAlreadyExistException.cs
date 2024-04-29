@@ -13,5 +13,7 @@ namespace YoutubeApi.Application.Features.Auth.Exceptions
         {
             
         }
+
+        
     }
 }
