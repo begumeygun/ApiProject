@@ -1,4 +1,5 @@
 ﻿using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using YoutubeApi.Application.Features.Products.Command.CreateProduct;
@@ -20,7 +21,7 @@ namespace YoutubeApi.Api.Controllers
         }
 
         [HttpGet]
-
+        [Authorize]
         public async Task<IActionResult> GetAllProducts()
         {
             var response = await mediator.Send(new GetAllProductsQueryRequest());
