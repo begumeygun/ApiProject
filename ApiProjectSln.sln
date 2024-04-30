@@ -9,17 +9,17 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{CBDB7129-51AE-4BC4-BC93-7B743247C986}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Application", "Core\YoutubeApi.Application\YoutubeApi.Application.csproj", "{49DBBDF5-A717-4E8C-80E8-17C40BE0F617}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YoutubeApi.Application", "Core\YoutubeApi.Application\YoutubeApi.Application.csproj", "{49DBBDF5-A717-4E8C-80E8-17C40BE0F617}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Domain", "Core\YoutubeApi.Domain\YoutubeApi.Domain.csproj", "{BEE797BC-1071-4548-AFEC-9EA5C8136B8D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YoutubeApi.Domain", "Core\YoutubeApi.Domain\YoutubeApi.Domain.csproj", "{BEE797BC-1071-4548-AFEC-9EA5C8136B8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Infrastructure", "Infrastructure\YoutubeApi.Infrastructure\YoutubeApi.Infrastructure.csproj", "{FD642BE5-260B-4823-AF0D-0D92D216C5D8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YoutubeApi.Infrastructure", "Infrastructure\YoutubeApi.Infrastructure\YoutubeApi.Infrastructure.csproj", "{FD642BE5-260B-4823-AF0D-0D92D216C5D8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Persistence", "Infrastructure\YoutubeApi.Persistence\YoutubeApi.Persistence.csproj", "{B88AFD6A-4FD1-464E-A0AA-CEF409D24689}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YoutubeApi.Persistence", "Infrastructure\YoutubeApi.Persistence\YoutubeApi.Persistence.csproj", "{B88AFD6A-4FD1-464E-A0AA-CEF409D24689}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Api", "Presentation\YoutubeApi.Api\YoutubeApi.Api.csproj", "{12737D37-5E4B-4511-A794-DF61FE46CE19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YoutubeApi.Api", "Presentation\YoutubeApi.Api\YoutubeApi.Api.csproj", "{12737D37-5E4B-4511-A794-DF61FE46CE19}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YoutubeApi.Mapper", "YoutubeApi.Mapper\YoutubeApi.Mapper.csproj", "{FB2A217D-3F40-4933-A15F-3E01000A236C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "YoutubeApi.Mapper", "YoutubeApi.Mapper\YoutubeApi.Mapper.csproj", "{FB2A217D-3F40-4933-A15F-3E01000A236C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
