@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using YoutubeApi.Application.Features.Brands.Commands.CreateBrand;
+using YoutubeApi.Application.Features.Brands.Queries.GetAllBrands;
 using YoutubeApi.Application.Features.Products.Command.CreateProduct;
 using YoutubeApi.Application.Features.Products.Command.DeleteProduct;
 using YoutubeApi.Application.Features.Products.Command.UpdateProduct;
@@ -55,5 +57,16 @@ namespace YoutubeApi.Api.Controllers
 
             return Ok();
         }
+
+        [HttpPost]
+
+        public async Task<IActionResult> CreateBrand(CreateBrandCommandRequest request)
+        {
+            await mediator.Send(request);
+
+            return Ok();
+        }
+
+        
     }
 }
